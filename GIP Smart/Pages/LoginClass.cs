@@ -56,7 +56,6 @@ namespace GIP_Smart.Pages
 
             try
             {
-
                 connection.Open();
 
                 OleDbCommand command = new OleDbCommand();

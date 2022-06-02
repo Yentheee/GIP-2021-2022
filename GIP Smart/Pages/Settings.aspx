@@ -27,7 +27,7 @@
                 <ul class="nav navbar-nav">
                    <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Lights.aspx">Lights</a></li>
-                    <li><a href="Wall_Outlet.aspx">Wall Outlet</a></li>
+                    <li><a href="Stopcontact.aspx">Wall Outlet</a></li>
                     <li><a href="Camera.aspx">Camera</a></li>
                     <li><a href="Settings.aspx">Settings</a></li>
                     <li><a href="Login.aspx">Log Out</a></li>

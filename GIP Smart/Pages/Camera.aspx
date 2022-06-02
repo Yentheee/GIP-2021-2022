@@ -26,7 +26,7 @@
                 <ul class="nav navbar-nav">
                    <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Lights.aspx">Lights</a></li>
-                    <li><a href="Wall_Outlet.aspx">Wall Outlet</a></li>
+                    <li><a href="Stopcontact.aspx">Wall Outlet</a></li>
                     <li><a href="Camera.aspx">Camera</a></li>
                     <li><a href="Settings.aspx">Settings</a></li>
                     <li><a href="Login.aspx">Log Out</a></li>
@@ -34,12 +34,13 @@
             </div>
         </div>
     </div>
+    <hr />
     <div class="container body-content">
         
 
-        <iframe></iframe>
+        <iframe style= width="560" height="315" src="https://www.youtube.com/embed/coQo7iIqJtY" title="YouTube video player" allow="autoplay" allowFullScreen></iframe>
 
-        <hr />
+        
         <footer>
             <p>Sm@rt Power  -   Yenthe Van den Eynden, Nicolas Hutsebaut</p>
         </footer>

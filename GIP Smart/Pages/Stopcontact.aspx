@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="GIP_Smart.Pages.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Stopcontact.aspx.cs" Inherits="GIP_Smart.Pages.Stopcontact" %>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Wall Outlet</title>
     <link href="/Content/bootstrap.css" rel="stylesheet"/>
 <link href="/Content/site.css" rel="stylesheet"/>
 
@@ -13,7 +13,6 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -26,12 +25,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="Home.aspx">Home</a></li>
+                   <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Lights.aspx">Lights</a></li>
                     <li><a href="Stopcontact.aspx">Wall Outlet</a></li>
                     <li><a href="Camera.aspx">Camera</a></li>
                     <li><a href="Settings.aspx">Settings</a></li>
-                    <li><a href="Login.aspx">LogOut</a></li>
+                    <li><a href="Login.aspx">Log Out</a></li>
                 </ul>
             </div>
         </div>
@@ -41,26 +40,17 @@
 
 
 <div class="jumbotron">
-    <h1>Sm@rt Power</h1>
-    <p class="lead">Sm@rt Power is ons GIP. Op deze site ga je kunnen zien hoeveel er is verbruikt. Je kan ook het licht aan en uit sturen op deze site
-        ook gaat het licht automatisch aan als er beweging is.</p>
+    <h1>Wall Outlet</h1>
+    <p class="lead">Op deze pagina vindt u hoeveel er is verbruikt op de stopcontacten.</p>
+    <!--<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>-->
 </div>
-    </div>
-    <!--<div class="col-md-3">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>-->
-        <div>
 <div class="row">
-        </div>
-    <div>
-        <div class="col-md-3">
+  <div class="col-md-3">
             <h2>Verbruik</h2>
             <div id="circularProgressVerbruik" class="circularprogress backgroundVerbruik" runat="server">  
             <div id="ProgressTextVerbruik" class="overlay" runat="server">
-            </div>  
-        </div>
+            </div> 
+            </div>
         <h2 class="text">verbruikt</h2>
     </div> 
     <div>
@@ -71,35 +61,23 @@
             </div>
         </div> 
     </div>
-        <div class="col-md-3">
-            <h2>Temperatuur Sensor 1</h2> 
-            <div id="StatusTemperature1" class="overlay" runat="server"></div>  
-            </div>
-        </div>
-            <div class="col-md-3">
-            <h2>Temperatuur Sensor 2</h2> 
-            <div id="StatusTemperature2" class="overlay" runat="server"></div>  
-            </div>
-        </div>
-        <hr />
+
 </div>
-            <footer>
-            <p> Sm@rt Power  -   Yenthe Van den Eynden, Nicolas Hutsebaut</p>
-        </footer>  
+        <hr />
+        <footer>
+            <p>Sm@rt Power  -   Yenthe Van den Eynden, Nicolas Hutsebaut</p>
+        </footer>
+    </div>
+
     <script src="/Scripts/jquery-3.3.1.js"></script>
 
     <script src="/Scripts/bootstrap.js"></script>
 
     
-    </form>
-
-          
 </body>
 </html>
-
-<style>  
-
-    .backgroundTemperature {  
+<style>
+ .backgroundTemperature {  
         background-image: linear-gradient(<%= Val1 %>, <%= ColorCode %> 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(<%= Val2 %>, #18bc9c 50%, #ffffff 50%, #ffffff);  
     }  
     .backgroundVerbruik {  

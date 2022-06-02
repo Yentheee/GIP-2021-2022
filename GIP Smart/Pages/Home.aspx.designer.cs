@@ -24,22 +24,22 @@ namespace GIP_Smart.Pages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblVerbruikt control.
+        /// circularProgressVerbruik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblVerbruikt;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl circularProgressVerbruik;
 
         /// <summary>
-        /// label12 control.
+        /// ProgressTextVerbruik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label12;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProgressTextVerbruik;
 
         /// <summary>
         /// circularProgess control.
@@ -51,12 +51,30 @@ namespace GIP_Smart.Pages
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl circularProgess;
 
         /// <summary>
-        /// ProgressText control.
+        /// ProgressTextTemperature control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProgressText;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProgressTextTemperature;
+
+        /// <summary>
+        /// StatusTemperature1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl StatusTemperature1;
+
+        /// <summary>
+        /// StatusTemperature2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl StatusTemperature2;
     }
 }

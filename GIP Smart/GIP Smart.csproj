@@ -217,8 +217,7 @@
     <Content Include="Pages\Lights.aspx" />
     <Content Include="Pages\LoginStyle.css" />
     <Content Include="Pages\Settings.aspx" />
-    <Content Include="Pages\Wall_Outlet.aspx" />
-    <Content Include="Pages\WebForm1.aspx" />
+    <Content Include="Pages\Stopcontact.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -282,7 +281,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Pages\Classes\Netwerkcommunicatie.cs" />
-    <Compile Include="Pages\Classes\Uitlezen.cs" />
     <Compile Include="Pages\LoginClass.cs" />
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -321,19 +319,12 @@
     <Compile Include="Pages\Settings.aspx.designer.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Wall_Outlet.aspx.cs">
-      <DependentUpon>Wall_Outlet.aspx</DependentUpon>
+    <Compile Include="Pages\Stopcontact.aspx.cs">
+      <DependentUpon>Stopcontact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Wall_Outlet.aspx.designer.cs">
-      <DependentUpon>Wall_Outlet.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Pages\Stopcontact.aspx.designer.cs">
+      <DependentUpon>Stopcontact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

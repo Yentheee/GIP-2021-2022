@@ -4,15 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Text;
 using System.Data.OleDb;
 
 namespace GIP_Smart.Pages
 {
-    public partial class Lights : System.Web.UI.Page
+    public partial class Stopcontact : System.Web.UI.Page
     {
-        Pages.Classes.Netwerkcommunicatie netwerkcommunicatie = new Pages.Classes.Netwerkcommunicatie();
-
         string query;
         string connstring = Pages.connStrings.connString;
 
@@ -77,7 +74,7 @@ namespace GIP_Smart.Pages
 
 
             ProgressTextVerbruik.InnerText = "0%";
-            query = "SELECT Stroom FROM Verlichting WHERE id = (SELECT max(id) FROM Verlichting);";
+            query = "SELECT Stroom FROM StopContact WHERE id = (SELECT max(id) FROM StopContact);";
             DisplayDataVerbruik(connstring, query);
         }
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -107,7 +104,7 @@ namespace GIP_Smart.Pages
             }
             else if (totaluser > 50 && totaluser < 100)
             {
-                double percentage = 10 * (Convert.ToDouble(totaluser));
+                double percentage = 360 * (Convert.ToDouble(totaluser) / 100);
                 Val1Verbruik = (percentage - 270).ToString() + "deg";
                 Val2Verbruik = "270deg";
                 ColorCodeVerbruik = "#18bc9c";
@@ -124,6 +121,7 @@ namespace GIP_Smart.Pages
                 Val2Verbruik = "270deg";
                 ColorCodeVerbruik = "#18bc9c";
             }
+
         }
 
         private void DisplayDataVerbruik(string connstring, string query)
@@ -170,7 +168,7 @@ namespace GIP_Smart.Pages
             }
             else if (totaluser < 50 && totaluser > 0)
             {
-                double percentageOfWholeAngle = 360 * (Convert.ToDouble(totaluser) / 100);
+                double percentageOfWholeAngle = (Convert.ToDouble(totaluser) /100 ) * 360;
                 Val2 = (90 + percentageOfWholeAngle).ToString() + "deg";
                 Val1 = "90deg";
                 ColorCode = "#ffffff";
@@ -225,22 +223,5 @@ namespace GIP_Smart.Pages
                 connection.Close();
             }
         }
-
-        protected void btn_On_Click(object sender, EventArgs e)
-        {
-            if (netwerkcommunicatie.mqttClient != null && netwerkcommunicatie.mqttClient.IsConnected)
-            {
-                netwerkcommunicatie.mqttClient.Publish("topic1", Encoding.UTF8.GetBytes("on"));
-            }
-        }
-
-        protected void btn_Off_Click(object sender, EventArgs e)
-        {
-            if (netwerkcommunicatie.mqttClient != null && netwerkcommunicatie.mqttClient.IsConnected)
-            {
-                netwerkcommunicatie.mqttClient.Publish("topic1", Encoding.UTF8.GetBytes("off"));
-            }
-        }
-
     }
 }
