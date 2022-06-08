@@ -1,0 +1,5 @@
+//#define SECRET_SSID "TP-LINK_E16A"
+//#define SECRET_PASS "23352209"
+
+#define SECRET_SSID "WiFi-2.4-FD80"
+#define SECRET_PASS "NiLaYe212014"
